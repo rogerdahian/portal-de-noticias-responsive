@@ -1,0 +1,55 @@
+#aside-1{
+  grid-area: aside-1;
+
+
+   & > header{
+    & div:nth-child(1){
+      margin-bottom: 12px;
+      
+    }
+  }
+
+ & .ai{
+    margin-top:24px;
+
+
+    }
+
+    & article{
+      flex-direction: row;
+
+      & img{
+      border-radius: 2px;
+      min-width: 80px;
+      max-width: 80px;
+      aspect-ratio: 1/1;
+    }
+    }
+
+    
+  }
+  
+
+
+@media (width >= 50em){
+  #aside-1{
+  .ai{
+    & article{
+      flex-direction: row-reverse;
+
+      & img{
+        min-width: 176px;
+        max-width: 176px;
+      }
+
+      & span{
+        margin-bottom: .5rem;
+      }
+
+      & h2{
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+}

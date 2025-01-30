@@ -1,0 +1,45 @@
+#aside-2{
+  grid-area: aside-2;
+
+  & #ads{
+    min-width: 328px;
+    margin-block: 2rem;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  & #more{
+
+  
+  & > header{
+    & div:nth-child(1){
+      margin-bottom: 12px;
+      
+    }
+  }
+  
+  & article{
+    & img{
+      width: 72px ;
+      aspect-ratio: 1/1;
+      border-radius: 2px;
+    }
+  }
+}
+
+
+
+  
+}
+
+@media (width >= 50em) {
+  #aside-2{
+   
+  
+    & #ads{
+      max-width: 488px;
+      margin-block: 0 2rem;
+    }
+  }
+  
+}

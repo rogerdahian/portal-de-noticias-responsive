@@ -1,0 +1,70 @@
+#section-1{
+  padding-top: 1rem;
+  
+  
+  & img{
+    height: 100%;
+    
+  }
+
+
+  & .card{
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );
+    }
+
+    & figcaption{
+      position: absolute;
+      bottom: 0;
+
+      padding: 16px;
+
+      & span {
+        margin-bottom: 8px;
+      }
+
+    } 
+  }
+
+  & .card-1 {
+    min-height: 416px;
+  } 
+
+  & .card-2 {
+    & figcaption{
+      padding: 12px;
+    }
+    
+  }
+}
+
+@media (width >= 50em) {
+  #section-1{
+    padding-top: 2.5rem;
+
+    grid-auto-flow: column;
+
+   
+
+    & .card-1{
+      height: 100%;
+    }
+    
+    & .div-2{
+      grid-template-columns: 1fr 1fr;
+  
+    }
+  }
+}

@@ -1,0 +1,40 @@
+#section-2{
+  padding-block: 2rem;
+
+  & div:nth-child(2){
+    margin-top: 12px;
+
+    & div:nth-child(2){
+      margin: 0;
+      gap: 4px;
+    }
+  }
+
+  & #new {
+    & .news {
+      & > div:nth-child(1) {
+        position: relative;
+        cursor: pointer;
+
+        & span{
+          position: absolute;
+          top: 8px;
+          left: 8px;
+        }
+      }
+
+    }
+  }
+}
+
+@media (width >= 50em) {
+  #section-2 {
+    padding-block: 5rem;
+
+    & #new{
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
